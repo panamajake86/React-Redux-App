@@ -20,3 +20,32 @@
 .App-link {
   color: #09d3ac;
 }
+
+.kanye {
+  margin: auto 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 650px;
+  margin: 20px;
+}
+
+.box {
+  width: 500px;
+  padding: 15px;
+  margin-bottom: 50px;
+  background-color: #282c34;
+}
+
+button {
+  width: 200px;
+}
+
+.quote {
+  margin: 10px;
+  color: cornsilk;
+}
