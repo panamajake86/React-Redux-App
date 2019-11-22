@@ -1,8 +1,9 @@
-import { WISDOM_LOADING, WISDOM_LOADED, WISDOM_FAILED } from '../actions';
+import { WISDOM_LOADING, WISDOM_LOADED, WISDOM_FAILED, BEAUTY } from '../actions';
 
 const initialState = {
     isLoading: false,
     error: "",
+    image: "",
     wisdom: { quote: "" }
 };
 
@@ -24,6 +25,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 error: action.payload,
                 isLoading: false
+            }
+        case BEAUTY:
+            return {
+                ...state,
+                image: action.payload
             }
         default:
             return state;
