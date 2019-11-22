@@ -10,7 +10,6 @@ export const getTheWisdom = () => dispatch => {
     axios
         .get("https://api.kanye.rest")
         .then(res => {
-            // console.log(res.data.quote)
             dispatch({
                 type: WISDOM_LOADED,
                 payload: { quote: res.data.quote }

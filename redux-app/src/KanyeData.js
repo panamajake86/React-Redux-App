@@ -24,7 +24,7 @@ const mapStateToProps = state => {
         isLoading: state.isLoading,
         error: state.error,
         wisdom: state.wisdom
-    }
-}
+    };
+};
 
-export default connect(mapStateToProps, { getTheWisdom })(KaneyData)
+export default connect(mapStateToProps, { getTheWisdom })(KaneyData);
