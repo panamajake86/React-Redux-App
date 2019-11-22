@@ -1,20 +1,14 @@
 import React from 'react';
 import './App.css';
-import { createStore, applyMiddleware } from 'redux';
-import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
 
-import reducer from './reducers';
-
-const store = createStore(reducer, applyMiddleware(thunk));
+import KanyeData from './KanyeData';
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="App">
-
-      </div>
-    </Provider >
+    <div className="App">
+      <h1>The Infinite Wisdom of Yeezus</h1>
+      <KanyeData />
+    </div>
   );
 }
 
